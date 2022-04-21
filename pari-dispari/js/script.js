@@ -12,11 +12,16 @@ const userChoice = prompt('Odd or Even');
 const userNumber = parseInt(prompt('Choose a number from 1 to 5'));
 console.log(userNumber);
 
+// computer generate a number with function
+
 const generatedNumber = generatedComputerN(1, 5);
 console.log(generatedNumber);
 
+// even or odd with function 
 const resultSum = evenOrOdd();
 console.log(resultSum);
+
+//deciding who won 
 
 if (userChoice === 'even' && resultSum === 'even') {
     console.log('you won');
@@ -26,11 +31,6 @@ if (userChoice === 'even' && resultSum === 'even') {
     console.log('sorry, computer won');
 }
 
-// if (userChoice === 'odd' && resultSum === 'odd') {
-//     console.log('hai vinto');
-// } else {
-//     console.log('hai perso, ha vinto il computer');
-// }
 
 // FUNCTION 
 /**
