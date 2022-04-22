@@ -6,7 +6,9 @@ Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 Dichiariamo chi ha vinto.*/ 
 
 //user decides even or odd
-const userChoice = prompt('Odd or Even');
+let userChoice 
+do { userChoice = prompt('Odd or Even');
+}while (userChoice !== "odd" && userChoice !== "even")
 
 // user chooses a number from 1 to 5
 const userNumber = parseInt(prompt('Choose a number from 1 to 5'));
@@ -16,6 +18,8 @@ console.log(userNumber);
 
 const generatedNumber = generatedComputerN(1, 5);
 console.log(generatedNumber);
+
+const sum = userNumber + generatedNumber;
 
 // even or odd with function 
 const resultSum = evenOrOdd();
@@ -30,6 +34,10 @@ if (userChoice === 'even' && resultSum === 'even') {
 } else {
     console.log('sorry, computer won');
 }
+
+// CI VUOLE IL WHILE PERCHE' SE SI METTE ALTRE COSE
+
+
 
 
 // FUNCTION 
@@ -53,7 +61,6 @@ function generatedComputerN(min, max) {
 
     function evenOrOdd(){
     //var
-    let sum = userNumber + generatedNumber;
     let result;
 
     //algorithm
